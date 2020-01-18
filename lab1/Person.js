@@ -6,8 +6,8 @@ class Person {
         this.favoriteColor = favoriteColor;
     }
 
-speak(){
-   console.log(chalk.keyword(this.name)(this.favoriteColor));
+speak() {
+   console.log(chalk.hex(this.favoriteColor)(this.name));
     }
 }
 
