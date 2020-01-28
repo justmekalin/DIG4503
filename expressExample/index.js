@@ -1,19 +1,20 @@
 const Express = require("express");
 const App = Express();
 const port = 80;
+const Person = require("./Person.js");
+
+let p = new Person("Mekalin", "green");
 
 App.get("/", function(Request, Response) {
     Response.send("Hi!");
     console.log("Got a request!");
 });
 
-App.get("/book", function(Request, Response) {
-    Response.send("book!");
+App.get("/name", function(Request, Response) {
+    Response.send(p.getName());
 });
 
-App.get("/index.html", function(Request, Response) {
-    Response.send("<html><p>Hola</p></html>");
-});
+
 
 App.listen(port, function() {
     console.log("server running!");
