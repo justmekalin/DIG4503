@@ -7,6 +7,7 @@ App.get("/", function(Request, Response) {
     console.log("Got a request!");
 });
 
+App.use('/public', Express.static('public'));
 
 App.listen(port, function() {
     console.log("server running!");
