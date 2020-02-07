@@ -18,6 +18,7 @@ App.get("/id/:id", (req, res,) => {
   //red for invalid
   //green for valid
     if (result.error) {
+      res.send("Invalid ID")
       console.log(chalk.red(result.error));
     } else {
       console.log(chalk.green(req.path));
@@ -36,6 +37,7 @@ App.get("/id/:id", (req, res,) => {
     });
   
     if (result.error) {
+      res.send("Invalid name")
       console.log(chalk.red(result.error));
     } else {
       console.log(chalk.green(req.path));
