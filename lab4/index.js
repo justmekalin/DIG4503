@@ -5,8 +5,8 @@ const App = Express();
 const port = 80;
 
 
-App.get("/id/:id", (req, res) => {
-    let result = { error: "ID does not exist!" };
+App.get("/id/:id", (req, res,) => {
+    let result = { error: "The ID does not exist!" };
   
     Pokemon.forEach((value) => {
       if (value.id == req.params.id) {
@@ -14,17 +14,19 @@ App.get("/id/:id", (req, res) => {
         res.send(value);
       }
     });
-  
+
+  //red for invalid
+  //green for valid
     if (result.error) {
       console.log(chalk.red(result.error));
     } else {
       console.log(chalk.green(req.path));
     }
-    res.send(result);
   });
   
+  //note to self: capitalize first letter in the name when putting it in
   App.get("/name/:name", (req, res) => {
-    let result = { error: "Name does not exist!" };
+    let result = { error: "The name does not exist!" };
   
     Pokemon.forEach((value) => {
       if (value.name == req.params.name) {
@@ -34,13 +36,10 @@ App.get("/id/:id", (req, res) => {
     });
   
     if (result.error) {
-      // Invalid
       console.log(chalk.red(result.error));
     } else {
-      // Valid
       console.log(chalk.green(req.path));
     }
-    res.send(result);
   })
 
 
