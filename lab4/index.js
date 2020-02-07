@@ -6,9 +6,9 @@ const port = 80;
 
 
 App.get("/id/:id", (req, res) => {
-    let result = { error: "That ID doesn't exist!" };
+    let result = { error: "ID does not exist!" };
   
-    Pokemon.forEach(value => {
+    Pokemon.forEach((value) => {
       if (value.id == req.params.id) {
         result = value;
         res.send(value);
@@ -20,12 +20,13 @@ App.get("/id/:id", (req, res) => {
     } else {
       console.log(chalk.green(req.path));
     }
+    res.send(result);
   });
   
   App.get("/name/:name", (req, res) => {
-    let result = { error: "That name doesn't exist! (Case Sensitive)" };
+    let result = { error: "Name does not exist!" };
   
-    Pokemon.forEach(value => {
+    Pokemon.forEach((value) => {
       if (value.name == req.params.name) {
         result = value;
         res.send(value);
@@ -39,6 +40,7 @@ App.get("/id/:id", (req, res) => {
       // Valid
       console.log(chalk.green(req.path));
     }
+    res.send(result);
   })
 
 
