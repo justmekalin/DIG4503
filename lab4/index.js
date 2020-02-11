@@ -11,18 +11,17 @@ App.get("/id/:id", (req, res,) => {
     Pokemon.forEach((value) => {
       if (value.id == req.params.id) {
         result = value;
-        res.send(value);
       }
     });
 
   //red for invalid
   //green for valid
     if (result.error) {
-      res.send("Invalid ID")
-      console.log(chalk.red(result.error));
+      console.log(chalk.red(req.path));
     } else {
       console.log(chalk.green(req.path));
     }
+    res.send(result)
   });
   
   //note to self: capitalize first letter in the name when putting it in
@@ -32,17 +31,20 @@ App.get("/id/:id", (req, res,) => {
     Pokemon.forEach((value) => {
       if (value.name == req.params.name) {
         result = value;
-        res.send(value);
+      
       }
     });
   
     if (result.error) {
-      res.send("Invalid name")
-      console.log(chalk.red(result.error));
+      
+      console.log(chalk.red(req.path));
     } else {
       console.log(chalk.green(req.path));
     }
+    res.send(result)
+    
   })
+
 
 
 App.listen(port, () => {
