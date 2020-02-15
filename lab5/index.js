@@ -4,6 +4,9 @@ const Express = require ("express");
 const App = Express();
 const port = 80;
 
+//response to public directory
+App.use('/', Express.static('public'));
+
 
 App.get("/id/:id", (req, res,) => {
     let result = { error: "The ID does not exist!" };
@@ -21,7 +24,8 @@ App.get("/id/:id", (req, res,) => {
     } else {
       console.log(chalk.green(req.path));
     }
-    res.send(result)
+      //use res.json instead res.send
+    res.json(result);
   });
   
   //note to self: capitalize first letter in the name when putting it in
@@ -41,9 +45,10 @@ App.get("/id/:id", (req, res,) => {
     } else {
       console.log(chalk.green(req.path));
     }
-    res.send(result)
+    //use res.json instead res.send
+    res.json(result);
     
-  })
+  });
 
 
 
