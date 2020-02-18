@@ -1,11 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import IdSearch from './components/IdSearch';
+import NameSearch from './components/NameSearch';
+
 
 class App extends React.Component {
   render() {
-    return(
-
+    return (
+      <div>
+        <IdSearch />
+        <NameSearch />
+   
+        <div>
+        <IdSearch />
+        <NameSearch />
+        <h2>Reporting</h2>
+        <div id="reportingArea"></div>
+      </div>
+        </div>
     );
   }
 }

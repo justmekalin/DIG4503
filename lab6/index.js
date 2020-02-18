@@ -5,7 +5,7 @@ const App = Express();
 const port = 80;
 
 //response to public directory
-App.use('/', Express.static('public'));
+App.use('/', Express.static("client/build"));
 
 
 App.get("/id/:id", (req, res,) => {
