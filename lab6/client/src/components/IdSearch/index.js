@@ -27,7 +27,6 @@ class IdSearch extends React.Component {
     render () {
         return (
             <div>
-                <IdSearch />
             <h3>ID:</h3>
               <form onSubmit={this.readID}>
                 <input id="id" type="text" />

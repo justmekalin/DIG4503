@@ -27,7 +27,6 @@ class NameSearch extends React.Component {
     render () {
         return (
             <div>
-                <NameSearch />
                 <h3>Name:</h3>
             <form onSubmit={this.readName}>
             <input id="name" type="text" />
