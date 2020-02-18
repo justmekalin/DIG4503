@@ -24,6 +24,7 @@ class NameSearch extends React.Component {
         element.value = '';
       }
 
+            //render function
     render () {
         return (
             <div>

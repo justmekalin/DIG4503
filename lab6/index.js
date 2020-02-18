@@ -4,7 +4,7 @@ const Express = require ("express");
 const App = Express();
 const port = 80;
 
-//response to public directory
+//changed from public directory to client
 App.use('/', Express.static("client/build"));
 
 
