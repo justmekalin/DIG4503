@@ -1,7 +1,8 @@
 import React from 'react';
 
 class NameSearch extends React.Component {
-     readName(event) {
+     
+  readName(event) {
         event.preventDefault();
 
         let element = document.querySelector('#name');
