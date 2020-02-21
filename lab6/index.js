@@ -2,7 +2,11 @@ const Pokemon = require("json-pokemon");
 const chalk = require("chalk");
 const Express = require ("express");
 const App = Express();
+//port number
 const port = 80;
+//require cors
+const cors = require("cors");
+App.use(cors());
 
 //changed from public directory to client
 App.use('/', Express.static("client/build"));

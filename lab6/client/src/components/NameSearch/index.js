@@ -6,8 +6,8 @@ class NameSearch extends React.Component {
         event.preventDefault();
 
         let element = document.querySelector('#name');
-//get information from /name
-        fetch('/name/' + element.value)
+          //get information from /name
+        fetch('http://localhost:80/name/' + element.value)
           .then(res => {
             return res.json();
           })
