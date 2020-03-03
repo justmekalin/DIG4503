@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server"
-  },
+    "server": "nodemon index.js",
+    "client": " cd client && npm run start"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
