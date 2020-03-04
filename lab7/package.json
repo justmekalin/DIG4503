@@ -1,7 +1,6 @@
 {
   "name": "lab7",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
@@ -15,7 +14,9 @@
     "concurrently": "^5.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongodb": "^3.5.3",
+    "mongodb": "^3.5.4",
     "nodemon": "^2.0.2"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
