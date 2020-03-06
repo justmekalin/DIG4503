@@ -46,6 +46,17 @@ App.get("/movies/title/:title", (req, res) => {
 });
 
 // TODO: Add a route /movies/year/:year
+App.get("movies/year/:year", (req, res) => {
+    let result = {"error": "Could not find a movie in that year!"};
+
+    database.findYear(req.params.year).then((year) => {
+        if(year != null) {
+            result = year;
+        }
+        res.json(result);
+    });
+});
+
 
 // Listen on 'port'
 App.listen(port, () => {
