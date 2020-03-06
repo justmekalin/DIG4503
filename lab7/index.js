@@ -49,9 +49,9 @@ App.get("/movies/title/:title", (req, res) => {
 App.get("/movies/year/:year", (req, res) => {
     let result = { "error": "Couldn't find a movie in that year!" };
 
-    database.findYear(req.params.year).then((year) => {
-        if (year != null) {
-            result = year;
+    database.findYear(req.params.year).then((movie) => {
+        if (movie != null) {
+            result = movie;
         }
         res.json(result);
 
