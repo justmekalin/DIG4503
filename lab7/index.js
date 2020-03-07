@@ -10,7 +10,7 @@ const cors = require('cors');
 App.use(cors());
 
 // Require Database from "./Database.js"
-const Database = require("./Database.js/index.js.js.js");
+const Database = require("./Database.js/index.js");
 
 // Create a new Database object based on its class
 // (This will connect to the MongoDB system and save its internal objects.)
