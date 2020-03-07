@@ -45,7 +45,7 @@ class Database {
             this.collection = database.collection("Movies");
         
         });
-    }
+    } 
 
     findTitle(title) {
 
