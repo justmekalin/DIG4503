@@ -3,7 +3,7 @@ class NameSearch extends React.Component{
         event.preventDefault();
         let input= document.querySelector("#name");
 
-        fetch("/api/pokemon/name/"+input.value)
+        fetch("/api/pokemon/name/" + input.value)
         .then((res)=>{
             return res.json();
         }).then((processed)=>{

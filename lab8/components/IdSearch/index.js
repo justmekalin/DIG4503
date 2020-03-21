@@ -3,7 +3,7 @@ class IdSearch extends React.Component{
         event.preventDefault();
         let input= document.querySelector("#ID");
 
-        fetch("/api/pokemon/id/"+input.value)
+        fetch("/api/pokemon/id/" + input.value)
         .then((res)=>{
             return res.json();
         }).then((processed)=>{
