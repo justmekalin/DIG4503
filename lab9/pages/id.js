@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import styles from '../components/pageCSS/styles.module.css';
 import IdSearch from '../components/IdSearch';
 
 const ID= ()=>{
     return(
-        <div>
+        <div className={styles.head}>
             <Head>
                 <title>IdSearch</title>
             </Head>
@@ -15,7 +16,7 @@ const ID= ()=>{
             <br/>
 
             <Link href="/type">
-                <a>Search by type</a>
+                <a className={styles.a}>Search by type</a>
             </Link>
 
             <br/>

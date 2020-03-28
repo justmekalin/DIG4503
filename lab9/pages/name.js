@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import NameSearch from '../components/NameSearch';
+import styles from '../components/pageCSS/styles.module.css';
 
 const Name= ()=>{
     return(

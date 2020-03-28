@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import TypeSearch from '../components/TypeSearch';
+import styles from '../components/pageCSS/styles.module.css';
+
 
 const Type= ()=>{
     return(

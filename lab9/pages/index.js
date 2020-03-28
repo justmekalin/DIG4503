@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import styles from '../components/pageCSS/styles.module.css';
 
 const Home = () => (
   <div className="container">

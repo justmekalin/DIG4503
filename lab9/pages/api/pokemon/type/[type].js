@@ -1,20 +1,17 @@
-import pokemon from 'json-pokemon';
+import getPokemon from 'json-pokemon/getPokemon';
 
-function response(req, res) {
-    let type = req.query.type;
-    let results = [];
-    let result = {"error": "Could not find name."};
+export default (req, res) => {
 
-    for(let i = 0; i < pokemon.length; i++) {
-        for(let k = 0; k < pokemon[i].typeList.length; k++) {
-            if (type == pokemon[i].typeList) {
-                results.push(pokemon[i].typeList);
-            } else if (type == null) {
-                res.json(result);
-            }
-        }
+    let result = {"error": "Could not find id."};
+
+    const type={type: req.query.typeList};
+
+    let pokemon=getPokemon(type);
+
+    if(pokemon !== null) {
+        result = pokemon;
     }
-    res.json(results);
-}
 
-export default response;
+    res.json(result);
+
+}
