@@ -1,9 +1,9 @@
 import styles from "./styles.module.css";
 
-function pageCSS() {
+function stylesPage() {
   return (
     <div className={styles.body} id="body"></div>
   );
 }
 
-export default pageCSS;
+export default stylesPage;
