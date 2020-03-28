@@ -6,27 +6,30 @@ import styles from '../components/pageCSS/styles.module.css';
 
 const Type= ()=>{
     return(
+        <center>
         <div>
+        <h1 className={styles.title}>Search for a Pokemon</h1>
             <Head>
                 <title>TypeSearch</title>
             </Head>
             <Link href="/name">
-                <a>Search by name</a>
+                <a className={styles.a} >Search by name</a>
             </Link>
 
             <br/>
 
             <Link href="/id">
-                <a>Search by ID</a>
+                <a className={styles.a}>Search by ID</a>
             </Link>
 
             <br/>
             
             <TypeSearch/>
-            <div id="reportingArea">
+            <div className={styles.result} id="reportingArea">
 
             </div>
         </div>
+        </center>
     )
 }
 

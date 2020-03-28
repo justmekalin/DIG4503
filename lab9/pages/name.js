@@ -5,27 +5,30 @@ import styles from '../components/pageCSS/styles.module.css';
 
 const Name= ()=>{
     return(
+        <center>
         <div>
+        <h1 className={styles.title}>Search for a Pokemon</h1>
             <Head>
                 <title>NameSearch</title>
             </Head>
             <Link href="/id">
-                <a>Search by ID</a>
+                <a className={styles.a}>Search by ID</a>
             </Link>
 
             <br/>
 
             <Link href="/type">
-                <a>Search by type</a>
+                <a className={styles.a}>Search by type</a>
             </Link>
 
             <br/>
             
             <NameSearch/>
-            <div id="reportingArea">
+            <div className={styles.result} id="reportingArea">
 
             </div>
         </div>
+        </center>
     )
 }
 

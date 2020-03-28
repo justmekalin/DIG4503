@@ -5,12 +5,14 @@ import IdSearch from '../components/IdSearch';
 
 const ID= ()=>{
     return(
-        <div className={styles.head}>
+    <center>
+        <div>
+        <h1 className={styles.title}>Search for a Pokemon</h1>
             <Head>
                 <title>IdSearch</title>
             </Head>
             <Link href="/name">
-                <a>Search by name</a>
+                <a className={styles.a}>Search by name</a>
             </Link>
 
             <br/>
@@ -22,10 +24,11 @@ const ID= ()=>{
             <br/>
             
             <IdSearch/>
-            <div id="reportingArea">
+            <div className={styles.result} id="reportingArea">
 
             </div>
         </div>
+        </center>
     )
 }
 

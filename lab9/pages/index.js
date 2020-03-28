@@ -3,26 +3,29 @@ import Link from 'next/link';
 import styles from '../components/pageCSS/styles.module.css';
 
 const Home = () => (
+  <center>
   <div className="container">
     <Head>
       <title>Home page</title>
     </Head>
+    <h1 className={styles.title}>Search for a Pokemon</h1>
     <Link href="/name">
-      <a>Search by name</a>
+      <a className={styles.home}>Search by name</a>
     </Link>
 
     <br/>
 
     <Link href="/id">
-      <a>Search by ID</a>
+      <a className={styles.home}>Search by ID</a>
     </Link>
 
     <br/>
     
     <Link href="/type">
-      <a>Search by type</a>
+      <a className={styles.home}>Search by type</a>
     </Link>
   </div>
+  </center>
 )
 
 export default Home
