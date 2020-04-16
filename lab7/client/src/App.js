@@ -1,5 +1,7 @@
 import React from 'react';
 import YearSearch from './components/YearSearch';
+import Welcome from './components/Title';
+
 
 class App extends React.Component {
 
@@ -43,6 +45,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+   <Welcome />
         <YearSearch callback={this.setResultsTable} />
         {this.createResultsTable()}
       </div>
