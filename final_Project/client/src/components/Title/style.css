@@ -2,57 +2,57 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 50vh;
     background-color: wheite;
   }
   
-  .deconstructed {
+  .title {
     position: relative;
     margin: auto;
     height: 0.71em;
     color: transparent;
     font-family: 'Cambay', sans-serif;
-    font-size: 10vw;
-    font-weight: 700;
+    font-size: 6vw;
+    font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 1.03em;
   }
   
-  .deconstructed > div {
+  .title > div {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    color: #ffff64;
+    color: #476622;
     pointer-events: none;
   }
   
-  .deconstructed > div:nth-child(1) {
+  .title > div:nth-child(1) {
     -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
     mask-image: linear-gradient(black 25%, transparent 25%);
-    animation: deconstructed1 5s infinite;
+    animation: title1 5s infinite;
   }
   
-  .deconstructed > div:nth-child(2) {
+  .title > div:nth-child(2) {
     -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
     mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
-    animation: deconstructed2 5s infinite;
+    animation: title2 5s infinite;
   }
   
-  .deconstructed > div:nth-child(3) {
+  .title > div:nth-child(3) {
      -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
     mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
-    animation: deconstructed3 5s infinite;
+    animation: title3 5s infinite;
   }
   
-  .deconstructed > div:nth-child(4) {
+  .title > div:nth-child(4) {
      -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
     mask-image: linear-gradient(transparent 75%, black 75%);
-    animation: deconstructed4 5s infinite;
+    animation: title4 5s infinite;
   }
   
-  @keyframes deconstructed1 {
+  @keyframes title1 {
     0% {
       transform: translateX(100%);
     }
@@ -67,7 +67,7 @@ body {
     }
   }
   
-  @keyframes deconstructed2 {
+  @keyframes title2 {
     0% {
       transform: translateX(100%);
     }
@@ -82,7 +82,7 @@ body {
     }
   }
   
-  @keyframes deconstructed3 {
+  @keyframes title3 {
     0% {
       transform: translateX(100%);
     }
@@ -97,7 +97,7 @@ body {
     }
   }
   
-  @keyframes deconstructed4 {
+  @keyframes title4 {
     0% {
       transform: translateX(100%);
     }

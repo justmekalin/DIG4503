@@ -5,7 +5,7 @@ class Welcome extends React.Component {
 
     render() {
         return(
-            <div class="deconstructed">
+            <div class="title">
   Search Movie
   <div>  Search Movie</div>
   <div>  Search Movie</div>

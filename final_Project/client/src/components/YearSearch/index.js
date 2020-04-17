@@ -27,10 +27,10 @@ class YearSearch extends React.Component {
     render() {
         return(
             <div>
-                <h2>Search for Movies by their Year:</h2>
                 <input 
                     type="text" 
                     id="yearSearch" 
+                    placeholder="Search by Year"
                     onKeyUp={this.yearSearchFormSubmit} 
                 />
             </div>

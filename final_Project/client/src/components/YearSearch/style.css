@@ -2,5 +2,9 @@ body {
     text-align: center;
 }
 input {
-    border-color: aquamarine;
+    border-color: #94a8af;
+    margin-top: 6%;
+    padding: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
