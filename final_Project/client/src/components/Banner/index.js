@@ -6,12 +6,10 @@ class Banner extends React.Component {
     render() {
         return(
             <div className="filmHeader">
-            <img src={require('./film.png')} />
-
+            <img src={require('./film.png')} alt= "film"/>
 </div>
         );
     }
-
 }
 
 export default Banner;

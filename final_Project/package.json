@@ -1,10 +1,12 @@
 {
+
   "name": "lab7",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
+    "build": "cd client && npm run build",
     "client-start": "cd client && npm run start",
     "start": "concurrently 'npm:server' 'npm:client-start'"
   },
@@ -16,5 +18,8 @@
     "express": "^4.17.1",
     "mongodb": "^3.5.4",
     "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
